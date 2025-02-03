@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Impact','Franklin Gothic Medium';
+}
+
+body{
+    background-color: black;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+nav {
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:3px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 100;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: violet;
+}
+
+p {
+    color: white;
+}
+
+.paginacion {
+    text-align: center;
+
+}
+
+.paginacion a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.paginacion a.active {
+    background-color: violet;
+    color: black;
+    border-radius: 5px;
+}
+
+.paginacion a:hover:not(.active) {
+    background-color: rgb(105, 105, 105);
+    color: white;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0%;
+    padding-top: 10px;
+    color: violet;
+}
+
+h6 {
+    font-size: 26px;
+    text-align: center;
+    color: rgb(193, 250, 107);
+    font-weight: 10;
+}
+
+.galeria_productos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.contenido {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(128, 0, 128, 5),
+    0 10px 10px rgba(128, 0, 128, 0.22);
+    transition: .4s;
+    background: black;
+}
+
+.contenido:hover {
+    box-shadow: 0 4px 7px rgba(238, 130, 238, 0.16),
+    0 4px 7px rgba(238, 130, 238, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.contenido img{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.contenido p {
+    text-align: center;
+    color: white;
+    padding-top: 0 8px;
+
+}
+
+.contenido .bt-comprar {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    background-color: violet;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;    
+    transition: all 300ms ease;
+}
+
+.contenido .bt-comprar:hover {
+    background-color: purple;
+    color: white;
+}
+    
+
+footer {
+    background-color: #111111;
+    padding: 20px;
+    margin: 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.carrusel-container {
+    width: 30%; 
+    max-width: 800px;
+    margin: 0 auto; 
+    margin-top: 20px;
+    margin-bottom: 250px;
+    position: relative; 
+}
+
+#carrusel-imagenes {
+    width: 250px; 
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 25%;
+    margin-right: 25%;
+    object-fit: contain;
+    
+
+}
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+
+.carrusel-btn-izq {
+    left: 10px; 
+}
+
+
+.carrusel-btn-der {
+    right: 10px; 
+}
+
+
+.carrusel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
