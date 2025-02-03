@@ -1,8 +1,8 @@
 
 const carouselImages = [
-    { src: "img/pipiiippipipiipiipipipzza20.png", link: "productos_piz.html" }, // Bebidas
-    { src: "img/papapapncho20.png", link: "productos_pan.html" }, // Panchos
-    { src: "img/latas_png20.png", link: "productos_beb.html" } // Pizzas
+    { src: "img/descarga.png", link: "productos_piz.html" }, // Bebidas
+    { src: "img/images.png", link: "productos_pan.html" }, // Panchos
+    { src: "img/images 2.png", link: "productos_beb.html" } // Pizzas
 ];
 
 let currentImageIndex = 0;
